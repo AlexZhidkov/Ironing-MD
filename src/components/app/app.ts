@@ -4,6 +4,7 @@ import { AuthRouteHelper } from 'core/auth/auth-route-helper';
 import { AuthService } from 'core/auth/auth-service';
 import { SignIn } from '../sign-in/sign-in';
 import { Tasks } from '../tasks/tasks';
+import { OrderForm } from '../order-form/order-form';
 
 const styles: string = require('./app.scss');
 const template: string = require('./app.html');
@@ -19,21 +20,16 @@ const template: string = require('./app.html');
 })
 
 @RouteConfig([
-  {path: '/', component: SignIn, as: 'SignIn'},
-  {path: '/tasks', component: Tasks, as: 'Tasks'}
+  {path: '/', component: OrderForm, as: 'OrderForm'}
 ])
 
 export class App {
   authenticated: boolean = false;
 
-  constructor(private auth: AuthService, routeHelper: AuthRouteHelper) {
-    auth.subscribe((authenticated: boolean) => {
-      this.authenticated = authenticated;
-    });
+  constructor() {
   }
 
   signOut(): void {
-    this.auth.signOut();
     window.location.replace('/');
   }
 }

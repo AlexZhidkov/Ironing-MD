@@ -1,0 +1,25 @@
+@import
+"~minx/src/settings",
+"~minx/src/functions",
+"~minx/src/mixins";
+
+//===================================================================
+//  ORDER-FORM
+//===================================================================
+
+.form-label-adjacent {
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+    min-width: 100px;
+    width: 140px;
+    font-size: rem(16px);
+}
+
+.form-field-adjacent {
+    vertical-align: top;
+    display: inline-block;
+    white-space: normal;
+    width: 331px;
+    font-size: rem(16px);
+}

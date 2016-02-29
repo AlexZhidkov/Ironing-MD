@@ -1,6 +1,5 @@
 {
-  "firebase": "ng2-todo-app",
-  "public": "target",
+  "firebase": "ironing",
 
   "headers": [
     {
