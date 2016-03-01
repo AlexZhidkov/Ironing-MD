@@ -6,7 +6,7 @@ import {
 } from 'angular2/common';
 
 const styles: string = require('./order-form.scss');
-const template: string = require('./order-form.html');
+const template: string = require('./order-form-classic.html');
 
 @Component({  
   selector: 'order-form',  

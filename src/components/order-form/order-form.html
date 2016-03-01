@@ -1,33 +1,9 @@
-<div class="ui raised segment">
-    <h2 class="ui header">Order Form:</h2>
-    <form [ngFormModel]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form">
-
-        <div class="field">
-            <label for="nameInput" class="form-label-adjacent">Name:</label>
-            <input class="form-field-adjacent" type="text" id="nameInput" placeholder="Enter your Name" [ngFormControl]="myForm.controls['name']">
-        </div>
-
-        <div class="field">
-            <label for="emailInput" class="form-label-adjacent">Email:</label>
-            <input class="form-field-adjacent" type="email" id="emailInput" placeholder="Enter email address" [ngFormControl]="myForm.controls['email']">
-        </div>
-
-        <div class="field">
-            <label for="phoneInput" class="form-label-adjacent">Phone:</label>
-            <input class="form-field-adjacent" type="tel" id="phoneInput" placeholder="Enter phone number" [ngFormControl]="myForm.controls['phone']">
-        </div>
-
-        <div class="field">
-            <label for="subjectInput" class="form-label-adjacent">Subject:</label>
-            <input class="form-field-adjacent" type="text" id="subjectInput" placeholder="Ironing Service" [ngFormControl]="myForm.controls['subject']">
-        </div>
-
-        <div class="field">
-            <label for="messageInput" class="form-label-adjacent">Message:</label>
-            <textarea class="form-field-adjacent" rows="6" id="messageInput" placeholder="Enter your enquiry or order here." [ngFormControl]="myForm.controls['message']">
-            </textarea>
-        </div>
-
-        <button type="submit" class="ui button" style="font-size:16px">Submit</button>
-    </form>
-</div>
+<md-content>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-button>{{title1}}</button>
+    <button md-button md-no-ink class="md-primary">Primary (md-noink)</button>
+    <button md-button disabled="true" class="md-primary">Disabled</button>
+    <button md-button class="md-warn">{{title4}}</button>
+    <div class="label">Flat</div>
+  </section>
+</md-content>

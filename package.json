@@ -1,12 +1,12 @@
 {
-  "name": "todo-angular2-firebase",
-  "version": "0.4.3",
-  "description": "Todo app with Angular2 and Firebase",
-  "homepage": "https://github.com/r-park/todo-angular2-firebase",
-  "repository": "https://github.com/r-park/todo-angular2-firebase.git",
+  "name": "ironing",
+  "version": "0.0.1",
+  "description": "We Love Ironing app",
+  "homepage": "https://github.com/AlexZhidkov/Ironing",
+  "repository": "https://github.com/AlexZhidkov/Ironing.git",
   "author": {
-    "name": "Richard Park",
-    "email": "objectiv@gmail.com"
+    "name": "Alex Zhidkov",
+    "email": "azhidkov@gmail.com"
   },
   "license": "MIT",
   "private": true,
@@ -25,7 +25,8 @@
     "es6-shim": "~0.34.4",
     "firebase": "~2.3.2",
     "immutable": "~3.7.6",
-    "rxjs": "5.0.0-beta.2"
+    "rxjs": "5.0.0-beta.2",
+    "ng2-material": "^0.2.8"
   },
   "devDependencies": {
     "autoprefixer": "~6.3.2",
