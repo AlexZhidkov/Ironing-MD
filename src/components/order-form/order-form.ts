@@ -17,28 +17,24 @@ export class OrderForm {
   model = {
     clientName: '',
     clientEmail: '',
-    description: 'Nuclear Missile Defense System',
-    rate: 500
+    clientPhone: '',
+    subject: '',
+    message: ''
   };
   constructor(fb: FormBuilder) {
     this.projectForm = fb.group({
       'clientName': ['', Validators.required],
-      'description': ['', Validators.compose([
-        Validators.required,
-        Validators.maxLength(30)
-      ])],
       'clientEmail': ['', Validators.compose([
         MdPatternValidator.inline('^.+@.+\..+$'),
         Validators.required,
         Validators.minLength(10),
         Validators.maxLength(100)
       ])],
-      'rate': ['', Validators.compose([
-        MdNumberRequiredValidator.inline(),
-        MdPatternValidator.inline('^1234$'),
-        MdMinValueValidator.inline(800),
-        MdMaxValueValidator.inline(4999)
-      ])]
+      'clientPhone': ['', Validators.compose([
+        MdNumberRequiredValidator.inline()
+      ])],
+      'subject': ['', Validators.required],
+      'message': ['', Validators.required]
     });
   }
 }
