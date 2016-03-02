@@ -1,6 +1,10 @@
 @import '../../../ng2-material/core/style/variables';
 @import '../../../ng2-material/core/style/mixins';
 @import '../../../ng2-material/core/style/default-theme';
-md-toolbar[md-hero] {
+.md-toolbar[md-hero] {
   margin-bottom: 40px;
+}
+
+.order-form {
+    max-width: 600px
 }

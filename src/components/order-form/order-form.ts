@@ -3,12 +3,11 @@ import {MdPatternValidator, MdMinValueValidator, MdNumberRequiredValidator, MdMa
 import {FORM_DIRECTIVES, Validators, FormBuilder, ControlGroup} from 'angular2/common';
 
 const template: string = require('./order-form.html');
-//const styles: string = require('./order-form.scss');
 
 @Component({selector: 'order-form'})
 @View({
   directives: [MATERIAL_DIRECTIVES, FORM_DIRECTIVES],
-  //styles: [styles],
+  //styleUrls: ['./src/components/order-form/order-form.scss'],
   template
 
 })

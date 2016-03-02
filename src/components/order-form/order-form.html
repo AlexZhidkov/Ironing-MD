@@ -1,7 +1,15 @@
-<div layout="column">
-  <md-toolbar class="md-hero" layout="row" layout-align="center center" layout-align-gt-md="end end">
-    <h1>Order Form</h1>
-   </md-toolbar>
+<div layout="column" style="max-width:840px;">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>
+        <span>Order Form</span>
+      </h2>
+      <span flex></span>
+      <button md-raised-button aria-label="Submit" (click)="clicked('Submit')">
+        Submit
+      </button>
+    </div>
+  </md-toolbar>   
   <md-content layout-padding>
     <form [ngFormModel]="projectForm">
       <md-input-container class="md-block">
@@ -19,7 +27,7 @@
         </div>
       </md-input-container>
       <md-input-container class="md-block">
-        <label for="clientPhone">ClientPhone</label>
+        <label for="clientPhone">Phone</label>
         <input md-input ngControl="clientPhone" id="clientPhone" [(value)]="model.clientPhone"/>
         <div md-messages="clientPhone" role="alert">
           <div md-message="required">This is required.</div>
@@ -34,14 +42,11 @@
       </md-input-container>
       <md-input-container class="md-block">
         <label for="message">Message</label>
-        <input md-input ngControl="message" id="message" [(value)]="model.message"/>
+        <input md-input ngControl="message" id="message" [(value)]="model.message">
         <div md-messages="message" role="alert">
           <div md-message="required">This is required.</div>
         </div>
       </md-input-container>
-      
     </form>
-    <strong>Model</strong>
-    <pre class="md-padding">{{model | json}}</pre>
   </md-content>
 </div>
