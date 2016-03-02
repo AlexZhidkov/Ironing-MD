@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
+set -ev
 
 ./node_modules/.bin/gulp dist
