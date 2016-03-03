@@ -28,7 +28,8 @@ module.exports = {
       'angular2/router',
       'firebase',
       'immutable',
-      'rxjs'
+      'rxjs',
+      'ng2-material/dist'
     ]
   },
 
@@ -49,8 +50,10 @@ module.exports = {
       {test: /\.html$/, loader: 'raw'},
       {test: /\.scss$/, include: [path.resolve(__dirname, 'src/components')], loader: 'raw!postcss-loader!sass'},
       {test: /\.scss$/, include: [path.resolve(__dirname, 'src/styles')], loader: 'style!css!postcss-loader!sass'},
-      {test: /\.ts$/, exclude: [/\.spec\.ts$/, /node_modules/], loader: 'ts'}
-    ],
+      {test: /\.ts$/, exclude: [/\.spec\.ts$/, /node_modules/], loader: 'ts'},
+      {test: /\.css$/, loader: 'style!css'},
+      {test: /\.ttf|eot|svg|woff$/, loader: 'file-loader' }
+  ],
 
     noParse: [
       /angular2\/bundles\/.+/
